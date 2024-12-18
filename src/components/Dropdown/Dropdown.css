@@ -1,0 +1,106 @@
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  width: 300px;
+  font-family: Arial, sans-serif;
+}
+
+/* Input box */
+.dropdown-input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #fff;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.dropdown-input:hover {
+  border-color: #007bff;
+}
+
+.dropdown-input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  overflow-y: auto;
+  margin-top: 5px;
+}
+
+/* Search box */
+.dropdown-search {
+  width: calc(100% - 20px);
+  margin: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.dropdown-search:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Options list */
+.dropdown-options {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Option item */
+.dropdown-option {
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #333;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.dropdown-option:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown-option.selected {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Scrollbar styling for dropdown menu */
+.dropdown-menu::-webkit-scrollbar {
+  width: 8px;
+}
+
+.dropdown-menu::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+.dropdown-menu::-webkit-scrollbar-thumb:hover {
+  background: #b3b3b3;
+}
+.dropdown-arrow {
+  font-size: 12px;
+  color: #333;
+  transition: transform 0.2s ease-in-out;
+  
+}
